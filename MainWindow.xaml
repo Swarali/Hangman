@@ -1,0 +1,48 @@
+﻿<Window x:Class="Hangman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hangman" Height="350" Width="525" Loaded="Window_Loaded" >
+    <Grid Height="311" Width="505" DataContext="{Binding}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*" />
+            <ColumnDefinition Width="428*" />
+            <ColumnDefinition Width="42*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="84,118,0,0" Name="DispLabel" VerticalAlignment="Top" Width="270" FontWeight="Bold" FontStretch="SemiExpanded" FontFamily="Times New Roman" />
+        <Button Content="Play Again" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="294,239,0,0" Name="PlayButton" VerticalAlignment="Top" Width="90" Click="PlayButton_Click" />
+        <Label Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="85,161,0,0" Name="ResultLabel" VerticalAlignment="Top" Width="270" />
+        <GroupBox Height="100" HorizontalAlignment="Left" Margin="8,12,0,0" Name="ButtongroupBox" VerticalAlignment="Top" Width="420" Header="Keyboard" Grid.Column="1">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Button Content="A" Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="buttona" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="B" Height="23" HorizontalAlignment="Left" Margin="40,10,0,0" Name="buttonb" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="C" Height="23" HorizontalAlignment="Left" Margin="70,10,0,0" Name="buttonc" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="D" Height="23" HorizontalAlignment="Left" Margin="100,10,0,0" Name="buttond" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="E" Height="23" HorizontalAlignment="Left" Margin="130,10,0,0" Name="buttone" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="F" Height="23" HorizontalAlignment="Left" Margin="160,10,0,0" Name="buttonf" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="G" Height="23" HorizontalAlignment="Left" Margin="190,10,0,0" Name="buttong" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="H" Height="23" HorizontalAlignment="Left" Margin="220,10,0,0" Name="buttonh" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="I" Height="23" HorizontalAlignment="Left" Margin="250,10,0,0" Name="buttoni" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="J" Height="23" HorizontalAlignment="Left" Margin="280,10,0,0" Name="buttonj" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="K" Height="23" Margin="310,10,0,0" Name="buttonk" VerticalAlignment="Top" HorizontalAlignment="Left" Width="30" Click="button_Click" />
+                <Button Content="L" Height="23" HorizontalAlignment="Left" Margin="340,10,0,0" Name="buttonl" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="M" Height="23" HorizontalAlignment="Left" Margin="370,10,0,0" Name="buttonm" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="N" Height="23" HorizontalAlignment="Left" Margin="11,40,0,0" Name="buttonn" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="O" Height="23" HorizontalAlignment="Left" Margin="41,40,0,0" Name="buttono" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="P" Height="23" HorizontalAlignment="Left" Margin="71,40,0,0" Name="buttonp" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="Q" Height="23" HorizontalAlignment="Left" Margin="101,40,0,0" Name="buttonq" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="R" Height="23" HorizontalAlignment="Left" Margin="131,40,0,0" Name="buttonr" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="S" Height="23" HorizontalAlignment="Left" Margin="161,40,0,0" Name="buttons" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="T" Height="23" HorizontalAlignment="Left" Margin="191,40,0,0" Name="buttont" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="U" Height="23" HorizontalAlignment="Left" Margin="221,40,0,0" Name="buttonu" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="V" Height="23" HorizontalAlignment="Left" Margin="251,40,0,0" Name="buttonv" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="W" Height="23" HorizontalAlignment="Left" Margin="281,40,0,0" Name="buttonw" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="X" Height="23" HorizontalAlignment="Left" Margin="311,40,0,0" Name="buttonx" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="Y" Height="23" HorizontalAlignment="Left" Margin="341,40,0,0" Name="buttony" VerticalAlignment="Top" Width="30" Click="button_Click" />
+                <Button Content="Z" Height="23" HorizontalAlignment="Left" Margin="371,40,0,0" Name="buttonz" VerticalAlignment="Top" Width="30" Click="button_Click" />
+            </Grid>
+        </GroupBox>
+        <Label Grid.Column="1" Height="48" HorizontalAlignment="Left" Margin="89,239,0,0" Name="Scorelabel" VerticalAlignment="Top" Width="146" />
+        <Label Content="" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="85,195,0,0" Name="correctlabel" VerticalAlignment="Top" Width="269" />
+        <Image Height="105" HorizontalAlignment="Left" Margin="0,118,0,0" Name="hangmanimage" Stretch="Fill" VerticalAlignment="Top" Width="85" Grid.Column="1" />
+    </Grid>
+</Window>
